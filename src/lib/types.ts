@@ -83,7 +83,7 @@ export interface Certificate {
   generatedAt: string | null;
   fileRef: string | null;
   emailStatus: EmailStatus;
-  failureReason?: string;
+  failureReason?: string | undefined;
 }
 
 export interface EmailRecord {
@@ -95,7 +95,7 @@ export interface EmailRecord {
   status: EmailStatus;
   attempts: number;
   sentAt: string | null;
-  failureReason?: string;
+  failureReason?: string | undefined;
   subject: string;
 }
 
